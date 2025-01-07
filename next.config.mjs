@@ -5,8 +5,6 @@ const nextConfig = {
   assetPrefix: "/my-webpage/",
   images: {
     unoptimized: true,
-    loader: "custom",
-    loaderFile: "./image-loader.js",
   },
 };
 
