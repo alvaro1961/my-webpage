@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "/my-webpage", // must match your repository name exactly
-  assetPrefix: "/my-webpage/", // add this line
+  basePath: "/my-webpage",
+  assetPrefix: "/my-webpage/",
   images: {
     unoptimized: true,
+    loader: "custom",
+    loaderFile: "./image-loader.js",
   },
 };
 

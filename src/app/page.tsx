@@ -1,4 +1,5 @@
 import Image from "next/image";
+import myImageLoader from "../image-loader";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
           width={180}
           height={38}
           priority
+          loader={myImageLoader}
         />
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
@@ -36,6 +38,7 @@ export default function Home() {
               alt="Vercel logomark"
               width={20}
               height={20}
+              loader={myImageLoader}
             />
             Deploy now
           </a>
@@ -62,6 +65,7 @@ export default function Home() {
             alt="File icon"
             width={16}
             height={16}
+            loader={myImageLoader}
           />
           Learn
         </a>
@@ -77,6 +81,7 @@ export default function Home() {
             alt="Window icon"
             width={16}
             height={16}
+            loader={myImageLoader}
           />
           Examples
         </a>
@@ -92,6 +97,7 @@ export default function Home() {
             alt="Globe icon"
             width={16}
             height={16}
+            loader={myImageLoader}
           />
           Go to nextjs.org →
         </a>
